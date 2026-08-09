@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanah Mas Batang City - Hunian Modern & Investasi Terbaik</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Gradient Teks Emas Metallic */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Gradient Tombol & Background Emas */
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #BF953F 0%, #D4AF37 50%, #AA771C 100%);
+        }
+        .bg-gold-gradient:hover {
+            background: linear-gradient(135deg, #D4AF37 0%, #FBF5B7 50%, #BF953F 100%);
+        }
+
+        /* Efek 3D Glossy & Shadow untuk Logo ASA */
+        .logo-3d {
+            filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.4)) 
+                    drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.25));
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .logo-3d:hover {
+            transform: translateY(-2px) scale(1.05) rotateX(10deg);
+            filter: drop-shadow(0px 10px 14px rgba(212, 175, 55, 0.4)) 
+                    drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed">
+
+    <!-- NAVIGATION BAR -->
+    <header class="bg-slate-900/90 backdrop-blur-md fixed w-full top-0 z-50 border-b border-amber-500/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex justify-between items-center">
+            
+            <!-- LOGO ASA 3D & BRAND NAME -->
+            <div class="flex items-center space-x-3">
+                <div class="logo-3d w-9 h-12 sm:w-10 sm:h-14 flex-shrink-0 cursor-pointer">
+                    <svg viewBox="0 0 100 140" class="w-full h-full">
+                        <defs>
+                            <radialGradient id="blue3D" cx="35%" cy="30%" r="70%">
+                                <stop offset="0%" stop-color="#2563eb" />
+                                <stop offset="40%" stop-color="#1d4ed8" />
+                                <stop offset="85%" stop-color="#0f172a" />
+                                <stop offset="100%" stop-color="#020617" />
+                            </radialGradient>
+                            <linearGradient id="gold3D" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FCF6BA" />
+                                <stop offset="50%" stop-color="#D4AF37" />
+                                <stop offset="100%" stop-color="#AA771C" />
+                            </linearGradient>
+                            <filter id="inset-shadow" x="-10%" y="-10%" width="120%" height="120%">
+                                <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="#000000" flood-opacity="0.8"/>
+                            </filter>
+                        </defs>
+                        <ellipse cx="50" cy="70" rx="46" ry="66" fill="#000" />
+                        <ellipse cx="50" cy="70" rx="44" ry="64" fill="url(#blue3D)" stroke="#D4AF37" stroke-width="2"/>
+                        <ellipse cx="45" cy="40" rx="30" ry="20" fill="#ffffff" opacity="0.12" />
+                        <g filter="url(#inset-shadow)" fill="url(#gold3D)" font-family="Georgia, serif" font-weight="bold" text-anchor="middle">
+                            <text x="32" y="80" font-size="38" letter-spacing="-1">A</text>
+                            <text x="68" y="80" font-size="38" letter-spacing="-1">A</text>
+                            <text x="50" y="88" font-size="60" font-style="italic" fill="#FFF8DC">S</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="text-lg sm:text-2xl font-bold tracking-tight text-white leading-none">Tanah Mas</span>
+                    <span class="text-xs sm:text-sm font-semibold text-amber-400 tracking-wider">BATANG CITY</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium text-slate-300">
+                <a href="#keunggulan" class="hover:text-amber-400 transition">Keunggulan</a>
+                <a href="#tipe" class="hover:text-amber-400 transition">Tipe Unit</a>
+                <a href="#kpr" class="hover:text-amber-400 transition">Simulasi KPR</a>
+                <a href="#galeri" class="hover:text-amber-400 transition">Galeri</a>
+                <a href="#lokasi" class="hover:text-amber-400 transition">Lokasi</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="mailto:info@tanahmasbatang.com" class="hidden lg:inline-flex items-center gap-2 text-slate-300 hover:text-amber-400 text-xs sm:text-sm font-medium transition">
+                    <i class="fa-solid fa-envelope text-amber-400"></i> info@tanahmasbatang.com
+                </a>
+                <a href="https://wa.me/6285640959375?text=Halo%20Marketing,%20saya%20tertarik%20dengan%20Tanah%20Mas%20Batang%20City" 
+                   target="_blank" 
+                   class="hidden sm:inline-flex items-center gap-2 bg-gold-gradient text-slate-950 hover:text-black font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm transition shadow-lg shadow-amber-500/10">
+                    <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i> Hubungi Marketing
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-slate-950 text-white min-h-screen flex items-center pt-28 pb-16 sm:pt-20 sm:pb-0">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Hero Perumahan" 
+                 class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-900/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+            <span class="inline-block bg-amber-500/10 text-amber-400 border border-amber-500/30 text-[10px] sm:text-xs px-3 sm:px-4 py-1.5 rounded-full font-semibold uppercase tracking-wider">
+                ✨ Promo Eksklusif Peluncuran Cluster
+            </span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold mt-4 sm:mt-6 mb-4 sm:mb-6 leading-tight max-w-3xl">
+                Hunian Modern Tropis Mewah di <span class="text-gold-gradient">Pusat Kota Industri Batang</span>
+            </h1>
+            <p class="text-base sm:text-lg lg:text-xl text-slate-300 mb-8 max-w-2xl">
+                Nikmati kenyamanan hidup bersatu dengan kemewahan. Dapatkan penawaran DP 0%, Free Biaya KPR, dan Gratis Canopy khusus bulan ini!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <a href="#tipe" class="w-full sm:w-auto bg-gold-gradient text-slate-950 hover:text-black font-bold px-8 py-3.5 sm:py-4 rounded-xl text-center transition shadow-lg text-sm sm:text-base">
+                    Lihat Pilihan Tipe
+                </a>
+                <a href="#survey" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-700/80 border border-amber-500/30 text-white px-8 py-3.5 sm:py-4 rounded-xl font-bold text-center transition text-sm sm:text-base">
+                    Jadwalkan Survey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section id="keunggulan" class="py-12 sm:py-20 bg-slate-900 border-t border-b border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Mengapa Harus <span class="text-gold-gradient">Tanah Mas</span>?</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Dirancang khusus untuk menghadirkan kemewahan, kenyamanan, dan nilai investasi tinggi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div class="p-6 rounded-2xl bg-slate-950/80 border border-amber-500/20 hover:border-amber-500/50 transition">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-4 border border-amber-500/20">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Lokasi Strategis</h3>
+                    <p class="text-slate-400 text-sm">5 menit dari Gerbang Tol, Pusat Perbelanjaan, dan Rumah Sakit Utama.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-950/80 border border-amber-500/20 hover:border-amber-500/50 transition">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-4 border border-amber-500/20">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Keamanan 24/7</h3>
+                    <p class="text-slate-400 text-sm">Sistem One Gate, RFID access card, dan pemantauan CCTV 24 jam penuh.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-950/80 border border-amber-500/20 hover:border-amber-500/50 transition">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-4 border border-amber-500/20">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Fasilitas Mewah</h3>
+                    <p class="text-slate-400 text-sm">Private Clubhouse, Kolam Renang, Playground, dan Jogging Track.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-950/80 border border-amber-500/20 hover:border-amber-500/50 transition">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-4 border border-amber-500/20">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Legalitas Terjamin</h3>
+                    <p class="text-slate-400 text-sm">Sertifikat Hak Milik (SHM) dan PBG/IMB sudah pecah per unit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIPE UNIT (DINAMIS DENGAN FITUR ADMIN) -->
+    <section id="tipe" class="py-12 sm:py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center mb-10 sm:mb-12 gap-4">
+                <div class="text-center sm:text-left">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-2">Pilihan Tipe Unit</h2>
+                    <p class="text-slate-400 text-sm sm:text-base">Temukan tipe hunian eksklusif yang pas untuk gaya hidup keluarga Anda.</p>
+                </div>
+                <!-- Tombol Pengelola Website -->
+                <button onclick="bukaModalAdmin()" class="bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/40 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+                    <i class="fa-solid fa-plus-circle"></i> Tambah / Kelola Unit
+                </button>
+            </div>
+
+            <!-- Grid Container untuk Unit Rumah -->
+            <div id="unitContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Unit akan dirender secara otomatis oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- KALKULATOR SIMULASI KPR -->
+    <section id="kpr" class="py-12 sm:py-20 bg-slate-900 border-t border-b border-amber-500/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-950 rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-2xl border border-amber-500/30">
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-2">Simulasi Angsuran KPR</h2>
+                <p class="text-slate-400 text-center text-xs sm:text-sm mb-6 sm:mb-8">Hitung estimasi cicilan bulanan rumah impian Anda secara mandiri.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="text-xs text-slate-300 block mb-1">Harga Rumah (Rp)</label>
+                            <input type="number" id="hargaRumah" value="750000000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="text-xs text-slate-300 block mb-1">Uang Muka / DP (Rp)</label>
+                            <input type="number" id="uangMuka" value="0" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                            <div>
+                                <label class="text-xs text-slate-300 block mb-1">Bunga (%/Thn)</label>
+                                <input type="number" id="sukuBunga" value="5" step="0.1" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="text-xs text-slate-300 block mb-1">Tenor (Tahun)</label>
+                                <select id="tenor" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
+                                    <option value="10">10 Tahun</option>
+                                    <option value="15" selected>15 Tahun</option>
+                                    <option value="20">20 Tahun</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button onclick="hitungKPR()" class="w-full bg-gold-gradient text-slate-950 font-bold py-3.5 rounded-xl transition text-sm mt-2">Hitung Angsuran</button>
+                    </div>
+
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-amber-500/20 text-center">
+                        <span class="text-xs text-slate-400 block mb-2">Estimasi Angsuran / Bulan</span>
+                        <div id="hasilCicilan" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gold-gradient mb-3">Rp 5.930.000</div>
+                        <p class="text-[11px] sm:text-xs text-slate-400 leading-normal">*Perhitungan ini merupakan estimasi awal. Suku bunga dan syarat ketentuan mengikuti kebijakan bank penyedia KPR.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="py-12 sm:py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Galeri Kawasan & Interior</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                <img src="https://i.pinimg.com/736x/92/dd/d8/92ddd8b5c0a6d906507ee3ba5f15ef04.jpg" alt="Ruang Tamu" class="w-full h-36 sm:h-48 object-cover rounded-xl shadow-sm border border-amber-500/20 hover:scale-105 transition duration-300">
+                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=600&q=80" alt="Dapur Modern" class="w-full h-36 sm:h-48 object-cover rounded-xl shadow-sm border border-amber-500/20 hover:scale-105 transition duration-300">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80" alt="Kamar Utama" class="w-full h-36 sm:h-48 object-cover rounded-xl shadow-sm border border-amber-500/20 hover:scale-105 transition duration-300">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Taman Kawasan" class="w-full h-36 sm:h-48 object-cover rounded-xl shadow-sm border border-amber-500/20 hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SURVEY LOKASI & LOKASI MAPS -->
+    <section id="lokasi" class="py-12 sm:py-20 bg-slate-900 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                
+                <!-- Form Survey -->
+                <div id="survey" class="bg-slate-950 p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-amber-500/30">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-2 text-white">Jadwalkan Survey Lokasi</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm mb-6">Isi formulir berikut, tim marketing kami siap mendampingi Anda di lokasi.</p>
+                    <form onsubmit="kirimFormWA(event)" class="space-y-4">
+                        <div>
+                            <label class="text-xs font-semibold text-slate-300 block mb-1">Nama Lengkap</label>
+                            <input type="text" id="nama" required placeholder="Masukkan nama Anda" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500 text-white">
+                        </div>
+                        <div>
+                            <label class="text-xs font-semibold text-slate-300 block mb-1">Tipe Unit yang Minat</label>
+                            <select id="tipeMinat" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500 text-white">
+                                <option>Tipe 36 (Cluster Cedar)</option>
+                                <option>Tipe 60 (Cluster Oakwood)</option>
+                                <option>Tipe 90 (Cluster Pine)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs font-semibold text-slate-300 block mb-1">Rencana Tanggal Survey</label>
+                            <input type="date" id="tglSurvey" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-500 text-white">
+                        </div>
+                        <button type="submit" class="w-full bg-gold-gradient text-slate-950 font-bold py-3.5 rounded-xl transition text-sm">
+                            Kirim Jadwal via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Informasi Kontak & Embed Map -->
+                <div class="flex flex-col justify-between space-y-6">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-bold mb-2 text-white">Lokasi Pemasaran & Kontak</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-4">Kabupaten Batang, Jawa Tengah.</p>
+                        
+                        <div class="space-y-3 text-sm text-slate-300">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-envelope text-amber-400 text-base"></i>
+                                <span>Email: <a href="mailto:info@tanahmasbatang.com" class="text-amber-400 hover:underline">info@tanahmasbatang.com</a></span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-brands fa-whatsapp text-amber-400 text-base"></i>
+                                <span>WhatsApp: <a href="https://wa.me/6285640959375" target="_blank" class="text-amber-400 hover:underline">+62 856-4095-9375</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-64 sm:h-72 rounded-2xl sm:rounded-3xl overflow-hidden border border-amber-500/30 shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11590.111210803385!2d109.99594911673402!3d-6.9723415447213295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1786081133087!5m2!1sid!2sid" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/6285640959375?text=Halo%20Marketing,%20saya%20tertarik%20tanya%20properti" 
+       target="_blank" 
+       class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 bg-amber-500 text-slate-950 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-amber-400 hover:scale-110 transition duration-300 border-2 border-white">
+        <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+    </a>
+
+    <!-- FOOTER WITH 3D LOGO -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-amber-500/20 text-center text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center gap-3">
+            <div class="logo-3d w-8 h-10">
+                <svg viewBox="0 0 100 140" class="w-full h-full">
+                    <ellipse cx="50" cy="70" rx="46" ry="66" fill="#000" />
+                    <ellipse cx="50" cy="70" rx="44" ry="64" fill="url(#blue3D)" stroke="#D4AF37" stroke-width="2"/>
+                    <g fill="url(#gold3D)" font-family="Georgia, serif" font-weight="bold" text-anchor="middle">
+                        <text x="32" y="80" font-size="38">A</text>
+                        <text x="68" y="80" font-size="38">A</text>
+                        <text x="50" y="88" font-size="60" font-style="italic" fill="#FFF8DC">S</text>
+                    </g>
+                </svg>
+            </div>
+            <p>Email Official: <a href="mailto:info@tanahmasbatang.com" class="text-slate-400 hover:text-amber-400">info@tanahmasbatang.com</a></p>
+            <p>&copy; 2026 Tanah Mas Batang City. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL POPUP UNTUK UPLOAD & EDIT UNIT (PENGELOLA WEBSITE) -->
+    <div id="modalAdmin" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-amber-500/40 rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl relative">
+            <button onclick="tutupModalAdmin()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-xl font-bold text-white mb-1"><i class="fa-solid fa-house-medical text-amber-400 mr-2"></i> Tambah Tipe Unit Baru</h3>
+            <p class="text-xs text-slate-400 mb-6">Gambar yang di-upload akan tersimpan otomatis dan tampil di website.</p>
+            
+            <form onsubmit="simpanUnitBaru(event)" class="space-y-4 text-xs sm:text-sm">
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">Upload Gambar Rumah</label>
+                    <input type="file" id="inputGambar" accept="image/*" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-slate-300 focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">Nama Cluster</label>
+                    <input type="text" id="inputCluster" placeholder="Contoh: Cluster Cedar" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">Nama Tipe & Spesifikasi</label>
+                    <input type="text" id="inputNama" placeholder="Contoh: Tipe 36/72 (1 Lantai)" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">Deskripsi Singkat</label>
+                    <input type="text" id="inputDeskripsi" placeholder="Desain ringkas dan modern..." required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div class="grid grid-cols-3 gap-2">
+                    <div>
+                        <label class="block text-slate-300 mb-1 font-medium">K. Tidur</label>
+                        <input type="text" id="inputKT" placeholder="2" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 mb-1 font-medium">K. Mandi</label>
+                        <input type="text" id="inputKM" placeholder="1" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 mb-1 font-medium">Carport</label>
+                        <input type="text" id="inputCarport" placeholder="1" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-slate-300 mb-1 font-medium">Harga Tampil</label>
+                    <input type="text" id="inputHarga" placeholder="Contoh: Rp 450 Juta" required class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div class="pt-2 flex gap-2">
+                    <button type="button" onclick="tutupModalAdmin()" class="w-1/2 bg-slate-800 text-slate-300 font-bold py-3 rounded-xl hover:bg-slate-700 transition">Batal</button>
+                    <button type="submit" class="w-1/2 bg-gold-gradient text-slate-950 font-bold py-3 rounded-xl transition">Simpan Unit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Data Default Unit Rumah
+        const defaultUnits = [
+            {
+                id: 1,
+                cluster: "Cluster Cedar",
+                nama: "Tipe 36/72 (1 Lantai)",
+                deskripsi: "Desain ringkas dan modern, sangat cocok untuk keluarga muda.",
+                kt: "2",
+                km: "1",
+                carport: "1",
+                harga: "Rp 450 Juta",
+                gambar: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+                favorit: false
+            },
+            {
+                id: 2,
+                cluster: "Cluster Oakwood",
+                nama: "Tipe 60/90 (2 Lantai)",
+                deskripsi: "Hunian 2 lantai tropis dengan sirkulasi udara dan pencahayaan optimal.",
+                kt: "3",
+                km: "2",
+                carport: "1",
+                harga: "Rp 750 Juta",
+                gambar: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+                favorit: true
+            },
+            {
+                id: 3,
+                cluster: "Cluster Pine",
+                nama: "Tipe 90/120 (2 Lantai)",
+                deskripsi: "Tipe paling luas dengan area halaman belakang dan balkon santai.",
+                kt: "4",
+                km: "3",
+                carport: "2",
+                harga: "Rp 1,2 Miliar",
+                gambar: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+                favorit: false
+            }
+        ];
+
+        // Inisialisasi Data dari LocalStorage
+        function muatDataUnit() {
+            const dataLokal = localStorage.getItem('tanahMasUnits');
+            return dataLokal ? JSON.parse(dataLokal) : defaultUnits;
+        }
+
+        // Render Unit Rumah ke Tampilan
+        function renderUnits() {
+            const units = muatDataUnit();
+            const container = document.getElementById('unitContainer');
+            container.innerHTML = '';
+
+            units.forEach((unit, index) => {
+                const card = document.createElement('div');
+                card.className = "bg-slate-900 rounded-2xl overflow-hidden shadow-xl border border-amber-500/20 hover:border-amber-500/60 transition flex flex-col justify-between relative group";
+                
+                card.innerHTML = `
+                    <div>
+                        ${unit.favorit ? `<span class="absolute top-4 right-4 bg-gold-gradient text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full shadow-lg z-10"> Terfavorit</span>` : ''}
+                        <button onclick="hapusUnit(${unit.id})" class="absolute top-4 left-4 bg-red-600/80 hover:bg-red-600 text-white text-xs px-2.5 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition z-10">
+                            <i class="fa-solid fa-trash"></i> Hapus
+                        </button>
+                        <img src="${unit.gambar}" alt="${unit.nama}" class="w-full h-52 sm:h-60 object-cover">
+                        <div class="p-5 sm:p-6">
+                            <span class="text-xs font-semibold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full uppercase border border-amber-500/20">${unit.cluster}</span>
+                            <h3 class="text-lg sm:text-xl font-bold mt-3 mb-2 text-white">${unit.nama}</h3>
+                            <p class="text-slate-400 text-sm mb-4">${unit.deskripsi}</p>
+                            <div class="grid grid-cols-3 gap-1 border-y border-slate-800 py-3 mb-4 text-xs text-slate-300 font-medium text-center">
+                                <div><i class="fa-solid fa-bed text-amber-400 mb-1 block text-sm"></i> ${unit.kt} K. Tidur</div>
+                                <div><i class="fa-solid fa-bath text-amber-400 mb-1 block text-sm"></i> ${unit.km} K. Mandi</div>
+                                <div><i class="fa-solid fa-car text-amber-400 mb-1 block text-sm"></i> ${unit.carport} Carport</div>
+                            </div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block">Harga Mulai</span>
+                                <span class="text-xl font-extrabold text-gold-gradient">${unit.harga}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 sm:px-6 sm:pb-6">
+                        <a href="https://wa.me/6285640959375?text=Halo,%20minta%20pricelist%20${encodeURIComponent(unit.nama)}" target="_blank" class="block text-center bg-gold-gradient text-slate-950 font-bold py-3 rounded-xl transition text-sm">
+                            Download Brosur PDF
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Simpan Unit Baru
+        function simpanUnitBaru(e) {
+            e.preventDefault();
+            const fileGambar = document.getElementById('inputGambar').files[0];
+            
+            if (fileGambar) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const listUnit = muatDataUnit();
+                    const unitBaru = {
+                        id: Date.now(),
+                        cluster: document.getElementById('inputCluster').value,
+                        nama: document.getElementById('inputNama').value,
+                        deskripsi: document.getElementById('inputDeskripsi').value,
+                        kt: document.getElementById('inputKT').value,
+                        km: document.getElementById('inputKM').value,
+                        carport: document.getElementById('inputCarport').value,
+                        harga: document.getElementById('inputHarga').value,
+                        gambar: event.target.result, // Data URL dari gambar yang di-upload
+                        favorit: false
+                    };
+                    
+                    listUnit.push(unitBaru);
+                    localStorage.setItem('tanahMasUnits', JSON.stringify(listUnit));
+                    renderUnits();
+                    tutupModalAdmin();
+                    e.target.reset();
+                };
+                reader.readAsDataURL(fileGambar);
+            }
+        }
+
+        // Hapus Unit
+        function hapusUnit(id) {
+            if (confirm("Apakah Anda yakin ingin menghapus tipe unit ini?")) {
+                let listUnit = muatDataUnit();
+                listUnit = listUnit.filter(u => u.id !== id);
+                localStorage.setItem('tanahMasUnits', JSON.stringify(listUnit));
+                renderUnits();
+            }
+        }
+
+        // Fungsi Control Modal Admin
+        function bukaModalAdmin() {
+            document.getElementById('modalAdmin').classList.remove('hidden');
+        }
+        function tutupModalAdmin() {
+            document.getElementById('modalAdmin').classList.add('hidden');
+        }
+
+        // Kalkulator KPR
+        function hitungKPR() {
+            const harga = parseFloat(document.getElementById('hargaRumah').value) || 0;
+            const dp = parseFloat(document.getElementById('uangMuka').value) || 0;
+            const bungaTahun = parseFloat(document.getElementById('sukuBunga').value) || 0;
+            const tenorTahun = parseInt(document.getElementById('tenor').value) || 1;
+
+            const plafonPinjaman = harga - dp;
+            const bungaBulan = (bungaTahun / 100) / 12;
+            const totalBulan = tenorTahun * 12;
+
+            if (plafonPinjaman <= 0) {
+                document.getElementById('hasilCicilan').innerText = "Rp 0";
+                return;
+            }
+
+            const cicilan = (plafonPinjaman * bungaBulan) / (1 - Math.pow(1 + bungaBulan, -totalBulan));
+            document.getElementById('hasilCicilan').innerText = "Rp " + Math.round(cicilan).toLocaleString('id-ID');
+        }
+
+        // Form WhatsApp
+        function kirimFormWA(event) {
+            event.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const tipe = document.getElementById('tipeMinat').value;
+            const tgl = document.getElementById('tglSurvey').value;
+
+            const waURL = `https://wa.me/6285640959375?text=Halo%20Marketing,%20saya%20*${encodeURIComponent(nama)}*%20ingin%20jadwal%20survey%20lokasi:%0A-%20*Tipe:*%20${encodeURIComponent(tipe)}%0A-%20*Tanggal:*%20${encodeURIComponent(tgl)}`;
+            window.open(waURL, '_blank');
+        }
+
+        // Jalankan saat pertama kali dimuat
+        renderUnits();
+        hitungKPR();
+    </script>
+</body>
+</html>
